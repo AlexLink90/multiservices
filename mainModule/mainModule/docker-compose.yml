@@ -1,0 +1,98 @@
+version: "3.7"
+
+services:
+
+  postgres:
+    container_name: postgres
+    hostname: postgres
+    image: postgres
+    environment:
+      - POSTGRES_DB=calculator
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pas
+    ports:
+      - "5432:5432"
+    restart: always
+    healthcheck:
+      test: "exit 0"
+    networks:
+      - my_net
+
+  consul:
+    container_name: consul
+    hostname: consul
+    image: consul
+    ports:
+      - "8500:8500"
+    networks:
+      - my_net
+
+  subtraction:
+    container_name: subtraction
+    hostname: subtraction
+    image: subtraction
+    ports:
+      - "8083:8083"
+    networks:
+      - my_net
+    depends_on:
+      - consul
+      - postgres
+  addition:
+    container_name: addition
+    hostname: addition
+    image: addition
+    ports:
+      - "8081:8081"
+    networks:
+      - my_net
+    depends_on:
+      - consul
+      - postgres
+  multiplication:
+    container_name: multiplication
+    hostname: multiplication
+    image: multiplication
+    ports:
+      - "8084:8084"
+    networks:
+      - my_net
+    depends_on:
+      - consul
+      - postgres
+  division:
+    container_name: division
+    hostname: division
+    image: division
+    ports:
+      - "8082:8082"
+    networks:
+      - my_net
+    depends_on:
+      - consul
+      - postgres
+  calculator:
+    container_name: calculator
+    hostname: calculator
+    image: calculator
+    ports:
+      - "8080:8080"
+    networks:
+      - my_net
+    depends_on:
+      - consul
+      - postgres
+  apigateway:
+    container_name: apigateway
+    hostname: apigateway
+    image: apigateway
+    ports:
+      - "8888:8888"
+    networks:
+      - my_net
+    depends_on:
+      - consul
+      - postgres
+networks:
+  my_net:
+    driver: bridge

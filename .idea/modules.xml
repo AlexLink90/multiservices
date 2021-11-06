@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/additionService/additionService.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/additionService/additionService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/apiGateway/apiGateway.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/apiGateway/apiGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/calculator/calculator.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/calculator/calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/divisionService/divisionService.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/divisionService/divisionService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/mainModule.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/mainModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/multiplicationService/multiplicationService.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/multiplicationService/multiplicationService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/subtractionService/subtractionService.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/subtractionService/subtractionService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainModule/mainModule/supportModule/supportModule.iml" filepath="$PROJECT_DIR$/mainModule/mainModule/supportModule/supportModule.iml" />
+    </modules>
+  </component>
+</project>

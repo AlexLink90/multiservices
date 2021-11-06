@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+
+spring:
+  application:
+    name: apigateway
+
+  cloud:
+    consul:
+      host: consul
+      port: 8500
+      discovery:
+        health-check-path: /health
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+  config:
+    import: consul:/config/apigateway
+
+  main:
+    web-application-type: reactive
+

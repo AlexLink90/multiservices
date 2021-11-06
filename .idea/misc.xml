@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/divisionService/pom.xml" />
+        <option value="$PROJECT_DIR$/additionService/pom.xml" />
+        <option value="$PROJECT_DIR$/calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/divisionService/multiplicationService/pom.xml" />
+        <option value="$PROJECT_DIR$/subtractionService/pom.xml" />
+        <option value="$PROJECT_DIR$/multiplicationService/pom.xml" />
+        <option value="$PROJECT_DIR$/additionService/supportModule/pom.xml" />
+        <option value="$PROJECT_DIR$/supportModule/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/apiGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/mainModule/mainModule/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
